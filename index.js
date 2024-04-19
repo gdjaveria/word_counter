@@ -3,7 +3,7 @@ import chalk from "chalk";
 const answers = await inquirer.prompt([{
         name: "sentence",
         type: "input",
-        message: chalk.bold("write your sentence to count a word..! "),
+        message: chalk.bold.blue("write your sentence to count a word..! "),
     }]);
 const words = answers.sentence.trim().split(" ");
 console.log(words);
